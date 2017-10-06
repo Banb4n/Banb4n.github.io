@@ -1,0 +1,871 @@
+/* This file contain css for 'index.html' and 'typed.js' ------------------------------*/
+
+
+/* -- START css general -------------------------------------------------------------- */
+
+
+/* import fonts -----------------------------------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Nunito:200&subset=latin);
+@import url(https://fonts.googleapis.com/css?family=Khula:400&subset=latin);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:700);
+@import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister:400);
+/* Media queries ----------------------------------------------------------------------*/
+
+@media all and (max-width: 480px)
+{
+    .avatar_pres {
+        display: none;
+    }
+    
+    .Moi {
+        margin-top: 0px;
+    }
+    
+    #titreNom {
+        font-size: 2.5em;
+    }
+    
+    body {
+        background-repeat: no-repeat;
+    }
+    
+    .header_section {
+	    margin-top: -80px;
+        padding-bottom: 70px;
+    }
+    
+    .Form {
+	    padding-bottom: 130px;
+	    padding-top: 80px;
+    }
+    
+    .Thumbnail {
+	    margin: auto;
+    }
+    
+    .Form {
+	    width: 250px;
+    }
+    
+
+    
+    .panel {
+        width: 100%;
+    }
+}
+
+
+
+/* general ----------------------------------------------------------------------------*/
+
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 150vh;
+  background-color: #f4f4f4;
+  background-image: linear-gradient(190deg, rgba(199, 198, 198, 0.95),rgba(216, 216, 216, 0.95)), url(../images/webdesignHD.jpg);
+  background-size: cover;
+  background-position:  bottom right;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+     -ms-background-attachment: fixed;
+      -o-background-attachment: fixed;
+  overflow-x: hidden;
+  opacity: 0;
+  text-align: center;    
+  padding-right: 20px;
+}
+
+/* Menu navigation */
+
+.navbarFixed {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 103vw;
+    background-color: rgba(35, 34, 38, 0.99);
+    border-color: rgba(35, 34, 38, 0.98);
+    border-top: none;
+    border-left: none;
+    color: white;
+    -webkit-transition: 300ms ease 0s;
+    transition: 300ms ease 0s;
+    padding-right: 25px;
+}
+
+.navbarOnTop {
+    border: none;
+    background-color: none;
+    background: rgba(46, 46, 46, 0);
+    height: 80px;
+    padding-top: 12px;
+    top: 0;
+    margin-top: -60px;
+    padding-right: 25px;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: #FFBB11;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FFBB11;
+}
+
+.current {
+    border-bottom: 2px solid #FFBB11;
+    color: white;
+
+}
+
+.navbarOnTop .current {
+    border-bottom: none;
+    color: white;
+
+}
+
+.navbarFixed .navbar-brand {
+    color: lightgrey;
+    margin-top: 3px;
+}
+
+.navbar-default .navbar-brand {
+    color: lightgrey;
+    margin-top: 3px;
+}
+
+.navbar-brand  {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 3em;
+    color: white;
+    letter-spacing: 2px;
+    line-height: -2px
+}
+
+.navbar-brand span {
+    color: #FFBB11;
+    line-height: 2px;
+    
+}
+
+
+/* entete -----------------------------------------------------------------------------*/
+
+
+.panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px 15vw 0px 15vw;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 60%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: rgba(00, 00, 00, 0.0);
+    color: #FFBB11;
+    -webkit-border: none;
+    -moz-border: none;
+     -ms-border: none;
+      -o-border: none;
+    border: 0px;
+    z-index: 40;
+    margin: auto;
+    margin-top: 110px;
+}
+
+.panel a {
+    color: #E2E3DF;
+    -webkit-transition: all 30ms;
+    transition: all 30ms;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    padding: 15px;
+    background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.05),rgba(132, 132, 132, 0.02));
+}
+
+.panel a:hover {
+    -webkit-transition: 30ms ease 0s;
+    transition: 30ms ease 0s;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    color: #FFBB11;
+    text-shadow: 0px 0px 3px black;
+    border-color: #FFBB11;
+    background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.1),rgba(132, 132, 132, 0.1));
+
+}
+
+.panel a:active {
+    color: black;
+}
+
+#header {
+   margin-bottom: 0px;
+   min-height: 100vh;
+   margin: 0px -20px 30px -10px;
+   top: 0;
+   position: relative;
+   padding-top: 70px;
+   opacity: 1;
+   z-index: 10;
+   background-image: linear-gradient(110deg,rgba(255, 187, 17, 0.05), rgba(0, 0, 0, 0.6)), url(../images/webdesignHD.jpg);
+   background-size: cover;
+   background-position: bottom right;
+   background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+      -moz-background-attachment: fixed;
+       -ms-background-attachment: fixed;
+        -o-background-attachment: fixed;
+}
+
+/*-- titre ----------------------------------------------------------------------------*/
+
+    .containerTitre {
+        width: 100vw;
+        position: fixed;
+        text-align: center;
+        border: 0px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        z-index: 5;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    .Hide {
+        display: none;
+    }
+    
+
+    #titreNom {
+      background: linear-gradient(130deg, rgba(101,120,115,0.02), rgba(49,59,56,0.02));
+      min-height: 15vh;
+      padding-top: 1%;
+      padding-bottom: 40px;
+      border-radius: 15px;
+      font-size: 4.5em;
+      font-family: 'Love Ya Like A Sister', cursive;
+      color: white;
+      -webkit-text-shadow: 0px 1px 10px black;
+       -moz-text-shadow: 0px 1px 10px black;
+        -ms-text-shadow: 0px 1px 10px black;
+         -o-text-shadow: 0px 1px 10px black;
+      text-shadow: 0px 1px 10px black;
+      letter-spacing: 1.5px;
+
+    }
+
+    #titreJob {
+      background: rgba(0, 0, 0, 0.04);
+      padding: 6px; 
+      margin-bottom: 60px;
+      text-align: center;
+      border-radius: 8px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5em; 
+      -webkit-text-shadow: 1px 1px 5px black;
+       -moz-text-shadow: 1px 1px 5px black;
+        -ms-text-shadow: 1px 1px 5px black;
+         -o-text-shadow: 1px 1px 5px black;
+      text-shadow: 1px 1px 5px black;
+      color: #FFBB11;
+      letter-spacing: 1.5px;
+    }
+
+
+/*-- Toutes les sections de la page ---------------------------------------------------*/
+
+    section {
+        width: 90vw;
+        margin: auto;
+        z-index: 30;
+        padding: 0 10px;
+    }
+
+/*----- Entete des sections -----------------------------------------------------------*/
+
+        .header_section  {
+            height: 85px;
+            margin: auto;
+            text-align: center;
+            font-size: 10px;
+            font-family: cursive;
+            color: #FFBB11;
+            text-shadow: 0px 1px 5px black;
+            padding-top: 13px;
+            z-index: 30;
+            opacity: 1;
+            font-family: 'Love Ya Like A Sister', cursive;
+            font-weight: 900;   
+        }
+
+        .header_section i {
+            margin-left: -5px;
+        }
+
+/*------Section : A propos ------------------------------------------------------------*/
+
+        #Apropos {
+            color: white;
+            text-align: center;
+            min-height: 105vh;
+            width: 100vw;
+            margin-left: -15px;
+            margin-top: -30px;
+        }
+
+        #Biggest_title  {
+            font-size: 80px;
+            font-family: serif;
+            color: #2542A6;
+        }
+
+        .Presentation {
+            width: 100%;
+            margin: 80px 0px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .contain_pres {
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+
+        .Moi {
+            margin-top: 80px;
+            font-family: 'Droid', sans-serif;
+            font-weight: 400; 
+            font-size: 1.2em;
+            color: rgb(46, 45, 49);
+            line-height: 35px;
+        }
+
+        #titleMoi {
+            color: #FFBB11;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 1px 0px 2px black;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 900;
+        }
+
+        .avatar_pres {
+            width: 350px;
+            height: 350px;
+            background-image: url(../images/myAvatar400.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 15px;
+        }
+
+/*------ Section : Compétences --------------------------------------------------------*/
+
+        #Competences {
+            min-height: 110vh;
+            width: 100vw;
+            margin-left: -15px;
+            margin-top: -30px;
+        }
+
+        .Logo_Comp1  {
+            margin: auto;
+            margin-top: -35px;
+            background-color: #5cb85c;
+            width: 80px;
+            height: 65px;
+            border-radius: 8px;
+            padding-left: 16px;
+            padding-top: 13px;
+            padding-bottom: 5px;
+            border: 1px solid #E2E3DF;
+            color: #2E3233;
+        }
+
+        .Logo_Comp2  {
+            margin: auto;
+            margin-top: -35px;
+            background-color: #5bc0de;
+            width: 80px;
+            height: 65px;
+            border-radius: 8px;
+            padding-left: 18px;
+            padding-top: 12px;
+            padding-bottom: 5px;
+            border: 1px solid #E2E3DF;
+            color: #2E3233;
+        }
+
+
+        .Contain_Comp {
+            padding-top: 120px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .Thumbnail {
+            width: 350px;
+            background-color: rgb(46, 45, 49);
+            color: #E2E3DF;
+            padding: 9px 35px;
+            border-radius: 15px;
+            margin: auto;
+            min-width: 30vw;
+            min-height: 35vh;
+            margin-bottom: 40px;
+            text-align: justify;
+            border: 1px solid #E2E3DF;
+            -webkit-box-shadow: 4px 8px 5px rgb(3, 3, 3, 0.6);
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
+
+        }
+
+        .caption {
+            color: #E2E3DF;
+            list-style-type: none;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+        .caption div {
+            list-style-type: none;
+            line-height: 25px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+
+        }
+
+        .caption h3  {
+            color: #FFBB11;
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            font-size: 2em;
+        }
+
+
+
+/*-----Section : Projets --------------------------------------------------------------*/
+
+        .general_Projets {
+            width: 100%;
+            min-height: 98vh;
+            padding-bottom: 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        /* For the rest of code, go to styleProjets.scss */
+
+/*----- Section : Formations ----------------------------------------------------------*/
+
+        #Formations {   
+            min-height: 100vh;
+            width: 100vw;
+            margin-left: -15px;
+            margin-top: -10px;
+        }
+
+        .contain_formation {
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 30px;
+            margin-top: 50px;
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+
+
+        .descrip_Formation {
+            text-align: center;
+            width: 70%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            font-size: 16px;
+            color: #E2E3DF;
+            margin: auto;
+        }
+
+
+        .diplo_formation {
+            color: dodgerblue;
+            text-shadow: 0px 0px 1px black;
+            margin: auto;
+            right: 0;
+
+        }
+
+        .well {
+            width: 400px;
+            min-height: 250px;
+            background: rgba(0, 0, 0, 0.8);
+            -webkit-transition: all 1s;
+            transition: all 1s;
+            -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
+
+        }
+
+        .well h3 {
+            color: #FFBB11;
+            margin: auto;
+            letter-spacing: 2px;
+            padding-top: 13px;
+         }
+
+        .header_formations {
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            border-bottom: 1px solid lightgrey;
+            z-index: 10;
+        }
+
+        .date_formations {
+            color: lightgrey;
+            margin-top: 25px;
+            margin-bottom: -10px;
+            text-align: right;   
+            margin-right: 10px;
+        }
+
+        .date_formations i {
+            color: #239623;
+        }
+
+
+        .dropdown-menu {
+            margin-right: 20px;
+        }
+
+/*----- Section : Contact -------------------------------------------------------------*/
+
+        #Contact {
+              background-image: linear-gradient(110deg,rgba(255, 187, 17, 0.05), rgba(0, 0, 0, 0.6)), url(../images/webdesignHD.jpg);
+              background-size: cover;
+              background-position: bottom right;
+              background-attachment: fixed;
+              -webkit-background-attachment: fixed;
+                -moz-background-attachment: fixed;
+                 -ms-background-attachment: fixed;
+                  -o-background-attachment: fixed; 
+              width: 100vw;
+              margin-left: -15px;
+              min-height: 95vh;
+        }
+
+        .Form {
+	       max-width: 450px;
+           margin: auto;
+           margin-top: 60px;
+           -webkit-box-sizing: border-box;
+           -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+           padding: 25px;
+           border-radius: 10px;
+           border: 1px solid lightgrey;
+           -webkit-box-shadow: 4px 8px 5px rgba(3, 3, 3, 0.6);
+           box-shadow: 4px 8px 5px rgba(3, 3, 3, 0.6);
+        }
+
+        .field{
+           position: relative;
+           height: 60px;
+           padding: 5px 20px;
+           -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+           color: lightgrey;
+           text-align: center;
+           margin-bottom: 20px;
+           border-radius: 5px;
+           font-family: 'Droid', sans-serif;
+        }
+
+        .field-label{
+           position: relative;
+           margin: 0;
+           display: block;
+           color:  #E2E3DF;
+           line-height: 16px;
+           font-size: 16px;
+           font-weight: 400;
+
+           -webkit-transform: translateY(24px);
+
+           transform: translateY(24px);
+           -webkit-transition: color 0.3s, -webkit-transform 0.3s;
+           transition: color 0.3s, -webkit-transform 0.3s;
+           transition: transform 0.3s, color 0.3s;
+           transition: transform 0.3s, color 0.3s, -webkit-transform 0.3s;
+           -webkit-transform-origin: 0 50%;
+           transform-origin: 0 50%;
+        }
+
+        .field-input{
+           position: relative;
+           display: block;
+           width: 100%;
+           height: 32px;
+           padding: 8px 0;
+
+           line-height: 16px;
+           font-family: Roboto;
+           font-size: 16px;
+
+           background: transparent;
+           border: none;
+           -webkit-appearance: none;
+           outline: none;
+        }
+
+        .field::after, .field::before{
+           content:'';
+           height: 2px;
+           width: 100%;
+           position: absolute;
+           bottom: 6px;
+           left: 0;
+
+           background-color: #E2E3DF;
+        }
+
+        .field::after{
+           background-color: #FFBB11;
+           -webkit-transform: scaleX(0);
+           transform: scaleX(0);
+           -webkit-transition: -webkit-transform 0.3s;
+           transition: -webkit-transform 0.3s;
+           transition: transform 0.3s;
+           transition: transform 0.3s, -webkit-transform 0.3s;
+        }
+
+        .has-label .field-label{
+           -webkit-transform: translateY(0) scale(0.70);
+           transform: translateY(0) scale(0.70);
+           margin-left: -20px;
+           width: 50px;
+           text-shadow: 1px 1px 1px black;
+
+        }
+
+        .is-focused .field-label{
+           color: #FFBB11;
+           margin-left: -20px;
+        }
+
+        .field.is-focused::after{
+           -webkit-transform: scaleX(1);
+           transform: scaleX(1);
+        }
+
+        .form-control:focus {
+	        border-color: #FFBB11;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 187, 17, .6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 187, 17, .6);
+        }        
+
+        .Form:hover {
+/*	        border-color: #FFBB11;*/
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 187, 17, .6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 187, 17, .6);
+            background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.1),rgba(132, 132, 132, 0.1));
+        }
+
+        .Send_Retry {
+	        margin-top: 50px;
+        }
+
+        .btn-send {
+	            color: #E2E3DF;
+                -webkit-transition: all 30ms;
+                transition: all 30ms;
+                border: 1px solid white;
+                border-radius: 5px;
+                margin: auto;
+                -webkit-box-sizing: border-box;
+                padding: 5px 8px;
+                background-color: rgba(255, 255, 255, 0);
+                background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.05),rgba(132, 132, 132, 0.02));
+        }        
+        
+        .btn-reset {
+	            color: #E2E3DF;
+                -webkit-transition: all 30ms;
+                transition: all 30ms;
+                border: 1px solid white;
+                border-radius: 5px;
+                margin: auto;
+                -webkit-box-sizing: border-box;
+                padding: 5px 10px;
+                background-color: rgba(255, 255, 255, 0);
+                background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.05),rgba(132, 132, 132, 0.02));
+        }
+
+        .btn-reset:hover, .btn-default:focus:active {
+                background-color: rgba(255, 255, 255, 0);
+                -webkit-transition: 30ms ease 0s;
+                transition: 30ms ease 0s;
+                color: #e2373d;
+                text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+                border-color: #e2373d;
+                background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.1),rgba(132, 132, 132, 0.1));
+        }
+
+        .btn-send:hover, .btn-default:focus:active {
+                background-color: rgba(255, 255, 255, 0);
+                -webkit-transition: 30ms ease 0s;
+                transition: 30ms ease 0s;
+                color: #FFBB11;
+                text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+                border-color: #FFBB11;
+                background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.1),rgba(132, 132, 132, 0.1));
+        }
+
+        .btn-primary {
+	        color: black;
+        }
+
+/*----- Go to top ---------------------------------------------------------------------*/
+
+        .cRetour {
+          height: 45px;
+          width: 45px;
+          border-radius: 3px;
+          padding: 8px;
+          font-size: 25px;
+          text-align: center;
+          color: #fff;
+          background: rgba(0, 0, 0, 0.55);
+          z-index: 99999;
+          -webkit-transition: all ease-in 0.2s;
+          transition: all ease-in 0.2s;
+          position: fixed;
+          cursor: pointer;
+          bottom: 0.5em;
+          right: 15px;
+          display: none;
+        }
+        .cRetour:before{ content: "\25b2"; }
+        .cRetour:hover{
+          background:rgba(0, 0, 0, 1);
+          -webkit-transition:all ease-in 0.2s;
+          transition:all ease-in 0.2s;
+          color: #FFBB11;
+        }
+
+/* pied de page -----------------------------------------------------------------------*/
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    padding-top: 4vh;
+    text-align: center;
+    margin-left: -15px;
+    color: lightgrey;
+    font-family: 'Open sans', sans-serif;
+    background-color: #100f0d;
+}
+
+
+/* -- END css index.html --------------------------------------------------------------*/
+
+
+
+/* -- CSS for typed.js -- */
+
+#typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+.buttonNext {
+height: 5vh;
+        width: 5vw;
+        margin-left: 92vw;
+        margin-top: -35px;    
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/*
+            ______________________________________________________________________
+            \|||------|||||||--||||||---||||--||      |||||||  ||||||   ||||  |||/
+            /|||--|||-|||||--||--||||--|-|||--||  ||| |||||  ||  ||||  | |||  |||\
+            \|||------||||--|| |--|||--||-||--||       |||  ||||  |||  || ||  |||/
+            /|||--|||--||--|----|--||--|||-|--||  |||  ||  |    |  ||  ||| |  |||\
+            \|||-------|--||||||||--|--||||---||       |  ||||||||  |  ||||   |||/
+            ----------------------------------------------------------------------
+
+*/
+
+
+
+
+
